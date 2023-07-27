@@ -13,11 +13,12 @@ struct Landmark: Hashable, Codable, Identifiable {
     // 🔑 Key value
     var id: Int
     
-    // 📝 Text
+    // 📝 Variables
     var name: String
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     
     // 🗺️ Image view
     private var imageName: String

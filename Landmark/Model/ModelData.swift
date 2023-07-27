@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import Combine
 
-var landmarks: [Landmark] = load("landmarkData.json")
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
+
 
 // 🧩 T is the model type. in this case landmark.
 // This is formatting the data into the landmark object.
